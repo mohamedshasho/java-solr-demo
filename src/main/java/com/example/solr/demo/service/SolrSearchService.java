@@ -114,7 +114,7 @@ public class SolrSearchService {
             solrQuery.set("ps", "2"); // phrase slop of 2 words
         }
 
-        // 3. Configure Highlighting
+        // 3. Configure Highlighting Black
         if (request.isHighlight() && !"*:*".equals(rawQuery)) {
             solrQuery.setHighlight(true);
             solrQuery.addHighlightField("title_en");
